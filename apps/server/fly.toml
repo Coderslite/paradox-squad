@@ -1,0 +1,29 @@
+# Fly.io config for the game server. Deploy from the repo root:
+#   fly deploy --config apps/server/fly.toml --dockerfile apps/server/Dockerfile
+# Adding a region is a config change: `fly scale count 1 --region iad` (+ set REGION per machine).
+app = "paradox-squad-game"
+primary_region = "fra" # Frankfurt: good latency for both Europe and West Africa (Lagos)
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "2567"
+  REGION = "eu-central"
+
+[http_service]
+  internal_port = 2567
+  force_https = true
+  # Game rooms live in memory: never stop a machine with players on it.
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [http_service.concurrency]
+    type = "connections"
+    soft_limit = 400
+    hard_limit = 500
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

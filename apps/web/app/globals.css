@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background: #05070a;
+  color: #e9eef3;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* The game canvas must never scroll or show selection highlights. */
+canvas {
+  touch-action: none;
+  outline: none;
+}

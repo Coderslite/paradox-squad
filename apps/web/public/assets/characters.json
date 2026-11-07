@@ -1,0 +1,78 @@
+{
+  "characters": [
+    {
+      "id": "arissa",
+      "name": "Arissa",
+      "url": "/assets/raw/characters/Arissa.glb"
+    },
+    {
+      "id": "gas-mask",
+      "name": "Gas Mask",
+      "url": "/assets/raw/characters/Gas Mask.glb"
+    },
+    {
+      "id": "kate",
+      "name": "Kate",
+      "url": "/assets/raw/characters/Kate.glb"
+    },
+    {
+      "id": "swat-guy",
+      "name": "Swat Guy",
+      "url": "/assets/raw/characters/Swat Guy.glb"
+    },
+    {
+      "id": "swat",
+      "name": "Swat",
+      "url": "/assets/raw/characters/Swat.glb"
+    },
+    {
+      "id": "vanguard",
+      "name": "Vanguard",
+      "url": "/assets/raw/characters/Vanguard.glb"
+    }
+  ],
+  "clips": {
+    "crouch_idle": [
+      "/assets/raw/animations/Crouch Idle.glb"
+    ],
+    "crouch_walk": [
+      "/assets/raw/animations/Crouch Walk.glb"
+    ],
+    "death": [
+      "/assets/raw/animations/Death Back.glb",
+      "/assets/raw/animations/Death Front Headshot.glb",
+      "/assets/raw/animations/Death Front.glb",
+      "/assets/raw/animations/Death Right.glb"
+    ],
+    "fall": [
+      "/assets/raw/animations/Falling Idle.glb"
+    ],
+    "jump": [
+      "/assets/raw/animations/Jump Up.glb"
+    ],
+    "land": [
+      "/assets/raw/animations/Landing.glb"
+    ],
+    "idle": [
+      "/assets/raw/animations/Rifle Idle.glb"
+    ],
+    "walk_back": [
+      "/assets/raw/animations/Run Backward.glb"
+    ],
+    "run": [
+      "/assets/raw/animations/Run Forward.glb"
+    ],
+    "strafe_l": [
+      "/assets/raw/animations/Run Left.glb"
+    ],
+    "strafe_r": [
+      "/assets/raw/animations/Run Right.glb"
+    ],
+    "sprint": [
+      "/assets/raw/animations/Sprint Forward.glb"
+    ],
+    "walk_fwd": [
+      "/assets/raw/animations/Walk Forward.glb"
+    ]
+  }
+}
